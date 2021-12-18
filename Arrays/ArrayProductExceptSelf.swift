@@ -8,6 +8,7 @@ Notes:
 - traverse in forward direction once and reverse direction 
 - keep adding next element to product 
 
+**/
 
 class Solution {
     func productExceptSelf(_ nums: [Int]) -> [Int] {
