@@ -1,4 +1,4 @@
-/** 
+
 
 Number of Islands 
 
@@ -9,9 +9,11 @@ Notes:
 - Essentially finding blocks of adjacent 1's 
 - Technique: Call DFS on each 1 in the matrix, set every adjacent 1 (the island) to 1 as well 
 - Count how many times recusrive call happens to see how many islands
+- RMBR: use inout and & to get memeory location to edit varaibles for functions 
 
 
-**/ 
+ 
+
 
 class Solution {
     
