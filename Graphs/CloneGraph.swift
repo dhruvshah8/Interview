@@ -5,7 +5,7 @@ https://leetcode.com/problems/clone-graph/
 
 Notes:
 - have a dictionary holding old node mapping to new node 
-- use BFS 
+- use DFS 
 - recursively go through each node adding the neighbours into its array 
 - use the dictionary to access the new mapped node
 - if dictionary doesnt have a node then create one 
