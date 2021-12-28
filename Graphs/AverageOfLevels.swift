@@ -6,6 +6,7 @@ https://leetcode.com/problems/average-of-levels-in-binary-tree/
 Notes:
 - Use BFS becasue we want to look at each level 
 - Technique: Get the count of the queue and pop that amount off the queue to know how many elemenents in that level to view 
+- Alternative: Create a new array and each itteration replace the array with new level 
 
 
 **/
@@ -70,3 +71,41 @@ class Solution {
         return solution
     }
 }
+
+
+/** 
+func averageOfLevels(_ root: TreeNode?) -> [Double] {
+         guard let root = root else { return [] }
+    var queue = [TreeNode]()
+    queue.append(root)
+    var result = [Double]()
+   
+    
+    while !queue.isEmpty {
+        var newChildren = [TreeNode]()
+
+        let count = queue.count
+        var sum = 0
+        
+        for node in queue {
+            sum += node.val
+           
+            if let leftChild = node.left {
+                newChildren.append(leftChild)
+            }
+            
+            if let rightChild = node.right {
+                newChildren.append(rightChild)
+            }
+           
+        }
+        
+        result.append(Double(sum)/Double(count))
+        queue = newChildren
+    }
+    
+    
+    return result
+    }
+
+**/
