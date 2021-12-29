@@ -11,8 +11,6 @@ You are given an array of numbers and need to put them in the right order. The s
 
 	[ ...sorted numbers... | ...unsorted numbers... ]
 
-This is similar to [insertion sort](../Insertion%20Sort/), but the difference is in how new numbers are added to the sorted portion.
-
 It works as follows:
 
 - Find the lowest number in the array. You must start at index 0, loop through all the numbers in the array, and keep track of what the lowest number is.
