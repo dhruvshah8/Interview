@@ -31,11 +31,11 @@ Here is an implementation of selection sort in Swift:
 
 ```swift
 func selectionSort(_ array: [Int]) -> [Int] {
-  guard array.count > 1 else { return array }  // 1
+  guard array.count > 1 else { return array }  
 
-  var a = array                    // 2
+  var a = array                    
 
-  for x in 0 ..< a.count - 1 {     // 3
+  for x in 0 ..< a.count - 1 {    
 
     var lowest = x
     for y in x + 1 ..< a.count {   //  finds the lowest number
